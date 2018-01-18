@@ -1,0 +1,34 @@
+package laststand;
+
+option java_package = "com.desertowlgames.laststand.net";
+option java_outer_classname = "FrontEndProtocol";
+option java_multiple_files = true;
+
+// Each message must be assigned an integer id.
+
+message Test {
+	required fixed32 level = 1;
+	required string username = 2;
+	required int32 age = 3;
+	required uint32 year = 4;
+	required sint32 range = 5;
+	required sfixed32 speed = 6;
+	required bool banned = 7;
+	required float velocity = 8; 
+	required Embed embed = 9;
+	repeated int32 identifier = 10;
+}
+
+message Embed {
+	required string title = 1;
+}
+
+message Login {
+	required string username = 1;
+	required string password = 2;
+}
+
+message Error {
+	required int32 code = 1;
+	required string message = 2;
+}
