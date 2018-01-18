@@ -1,9 +1,8 @@
-This is a very early implementation of Google Protocol Buffers
-for UnrealScript and UDK 3.
+# protobuf-unrealscript 
 
-===============
-SUPPORTED TYPES
-===============
+This is a very early implementation of Google Protocol Buffers for UnrealScript and UDK 3.
+
+# Supported Types
 
 - float
 - int32
@@ -16,9 +15,7 @@ SUPPORTED TYPES
 - nested types
 - repeated types
 
-============
-KNOWN ISSUES
-============
+# Known Issues
 
 - Floats are not properly supported due to limitations in 
   UnrealScript.
@@ -30,3 +27,7 @@ KNOWN ISSUES
 - Groups are not supported but this was by design since they are 
   deprecated.
 - Extensions are not supported.
+
+# Note
+
+This code is provided as is with no warrant in the unlikely chance that someone might find it interesting. It was used in a real game so it does work fairly well but I only implemented the features we needed and any issues were just worked around. I no longer have any interest in working on this anymore (especially since UDK has moved to C++).
